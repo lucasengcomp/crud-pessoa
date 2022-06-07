@@ -1,5 +1,6 @@
 package com.br.endereco.model;
 
+import com.br.pessoa.model.Pessoa;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,13 +10,12 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.util.List;
 
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "pessoa")
+@Table(name = "endereco")
 public class Endereco {
 
     @EqualsAndHashCode.Include

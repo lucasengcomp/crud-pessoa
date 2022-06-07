@@ -1,4 +1,4 @@
 package com.br.endereco.resource;
 
-public class PessoaResource {
+public class EnderecoResource {
 }

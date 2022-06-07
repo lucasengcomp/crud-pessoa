@@ -1,4 +1,4 @@
-package com.br.endereco.model.enums;
+package com.br.pessoa.model.enums;
 
 public enum SexoPessoa {
 

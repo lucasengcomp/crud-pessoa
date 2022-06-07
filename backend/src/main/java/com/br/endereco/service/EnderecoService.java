@@ -1,5 +1,5 @@
 package com.br.endereco.service;
 
-public class PessoaService {
+public class EnderecoService {
 
 }

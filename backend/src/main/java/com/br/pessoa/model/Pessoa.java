@@ -1,6 +1,7 @@
-package com.br.endereco.model;
+package com.br.pessoa.model;
 
-import com.br.endereco.model.enums.SexoPessoa;
+import com.br.endereco.model.Endereco;
+import com.br.pessoa.model.enums.SexoPessoa;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -37,5 +38,6 @@ public class Pessoa {
     private SexoPessoa sexoPessoa;
 
     @OneToMany(mappedBy = "pessoa")
+    @JoinColumn(name = "pessoa_id")
     private List<Endereco> enderecos;
 }
