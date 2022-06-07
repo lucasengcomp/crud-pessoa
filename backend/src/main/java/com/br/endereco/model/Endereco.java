@@ -10,13 +10,15 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "endereco")
-public class Endereco {
+public class Endereco  implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     @EqualsAndHashCode.Include
     @Id
@@ -25,7 +27,7 @@ public class Endereco {
 
     @NotBlank
     @Column(length = 100)
-    private String nome;
+    private String cidade;
 
     @NotNull
     @Pattern(regexp = "[0-9]{5}-[0-9]{3}")
@@ -64,5 +66,4 @@ public class Endereco {
     @ManyToOne(optional = false)
     @JoinColumn(name = "pessoa_id")
     private Pessoa pessoa;
-
 }

@@ -38,6 +38,5 @@ public class Pessoa {
     private SexoPessoa sexoPessoa;
 
     @OneToMany(mappedBy = "pessoa")
-    @JoinColumn(name = "pessoa_id")
     private List<Endereco> enderecos;
 }
